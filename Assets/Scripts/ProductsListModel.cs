@@ -2,23 +2,23 @@ using System.Collections.Generic;
 
 namespace MVCPractice.Models.Products
 {
-    public class ProductsListModel
+    public class Products
     {
-        private List<ProductModel> productsList;
+        private List<Product> products;
 
-        public ProductsListModel(ProductModel[] productsList)
+        public Products(Product[] products)
         {
-            this.productsList.AddRange(productsList);
+            this.products.AddRange(products);
         }
 
-        public ProductModel GetProductById(string id)
+        public Product Get(string productId)
         {
-            for (int i = 0; i < productsList.Count; i++)
+            for (int i = 0; i < products.Count; i++)
             {
-                string currentIterationProductId = productsList[i].GetId();
-                if (currentIterationProductId == id)
+                string currentIterationProductId = products[i].GetId();
+                if (currentIterationProductId == productId)
                 {
-                    return productsList[i];
+                    return products[i];
                 }
             }
 

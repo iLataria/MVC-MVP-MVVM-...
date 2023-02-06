@@ -2,13 +2,13 @@ using UnityEngine;
 
 namespace MVCPractice.Models.Products
 {
-    public class ProductModel
+    public class Product
     {
-        private string id;
-        private string description;
-        private Sprite icon;
+        private readonly string id;
+        private readonly string description;
+        private readonly Sprite icon;
 
-        public ProductModel(string id, string description, Sprite icon)
+        public Product(string id, string description, Sprite icon)
         {
             this.id = id;
             this.icon = icon;
