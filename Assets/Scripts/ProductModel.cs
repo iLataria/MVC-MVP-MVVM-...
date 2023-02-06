@@ -14,6 +14,8 @@ namespace MVCPractice.Models.Products
             this.icon = icon;
             this.description = description;
         }
+
+        public string GetId() => id;
     }
 }
 
