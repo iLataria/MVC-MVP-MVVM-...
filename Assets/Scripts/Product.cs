@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace MVCPractice.Models.Products
+namespace MVCPractice.Models
 {
     [Serializable]
     public class Product

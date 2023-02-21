@@ -1,4 +1,4 @@
-using MVCPractice.Models.Products;
+using MVCPractice.Models;
 using System;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,13 +6,15 @@ using UnityEngine.UI;
 
 public class ProductView : MonoBehaviour
 {
-    [SerializeField] private Image imgComp;
-    private Button btn;
-    private Action<ProductView> onBtnClicked;
+    [SerializeField] 
+    private Image imgComp;
 
     private string id;
-    private string description;
     private Sprite icon;
+    private string description;
+
+    private Button btn;
+    private Action<ProductView> onBtnClicked;
 
     private void Awake()
     {

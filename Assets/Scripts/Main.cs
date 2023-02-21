@@ -1,8 +1,7 @@
-using MVCPractice.Models.Products;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using MVCPractice.Views;
+using MVCPractice.Models;
+using System.Collections.Generic;
 
 public class Main : MonoBehaviour
 {
