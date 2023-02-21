@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace MVCPractice.Models.Products
+namespace MVCPractice.Models
 {
     public class Products
     {
         private List<Product> products;
-        public Action<Product> modelChanged;
+        public Action<Product> OnProductRemoved;
 
         public Products(Product[] products)
         {
@@ -34,7 +34,7 @@ namespace MVCPractice.Models.Products
         {
             if (products.Count == 0) return;
             products.Remove(product);
-            modelChanged.Invoke(product);
+            OnProductRemoved.Invoke(product);
         }
     }
 }
